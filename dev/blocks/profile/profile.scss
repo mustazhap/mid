@@ -181,3 +181,30 @@
         font-size: 13px;
     }
 }
+
+.index{
+    &__wrapper{
+        padding-top: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    span{
+        color: $delete;
+        font-size: 60px;
+        position: relative;
+        &:after{
+            content: "beta v1.0";
+            position: absolute;
+            color: $dark;
+            top: 0;
+            right: 0;
+            font-size: 13px;
+        }
+    }
+    b{
+        margin-top: -10px;
+        font-size: 18px;
+
+    }
+}
