@@ -1,0 +1,156 @@
+// Header
+.header{
+    height: 65px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    background: white;
+    &__wrapper{
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav{
+        a{
+            color: $text;
+            transition: 0.3s all;
+            margin-right: 20px;
+            
+            &:hover{
+                color: $delete;
+                transition: 0.3s all;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__logo{
+        font-size: 20px;
+        color: $dark;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__tweet{
+        color: $text;
+        margin-left: 10px;
+        transition: 0.3s all;
+
+        &:hover{
+            text-decoration: none;
+            color: $delete;
+            transition: 0.3s all;
+        }
+    }
+    &__img{
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        border-radius: 50%;
+        border: 1px solid $text;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__enter{
+        margin-left: 10px;
+        color: $text;
+        font-size: 13px;
+
+        &:hover{
+            text-decoration: none;
+            color: $delete;
+        }
+
+        &-w{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background: white;
+            padding: 20px 10px;
+            border-radius: 10px;
+            top: 40px;
+            right: 0;
+            border: 1px solid #ccc;
+            span{
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            input{
+                height: 20px;
+                text-indent: 5px;
+                margin-bottom: 5px;
+                &:active, &:focus{
+                    box-shadow: 0 0 0.5pt 0.5pt $delete;
+                transition: 0.3s all;
+    
+                border-color: transparent;
+                }
+            }
+        }
+
+        &-col{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-b{
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__search{
+        border-radius: 30px;
+        border: 1px solid $text;
+        height: 30px;
+        width: 200px;
+        text-indent: 20px;
+
+        &:active, &:focus{
+            box-shadow: 0 0 0.5pt 0.5pt $delete;
+            border-color: transparent;
+            transition: 0.3s all;
+        }
+        &-w{
+            position: relative;
+            .search-button{
+                border: none;
+                right: 5px;
+                top: 50%;
+                background: transparent;
+                color: $text;
+                position: absolute;
+                margin-top: -7px;
+                cursor: pointer;
+            }
+        }
+       
+    }
+
+    
+    
+}
+
+
+// Header
