@@ -1,0 +1,96 @@
+.profile{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top{
+        background: $delete;
+        width: 100%;
+        height: 175px;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+
+    &__usr{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid white;
+        overflow: hidden;
+        background: $delete;
+        margin-top: -100px;
+        margin-left: 20px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__nav{
+        display: flex;
+    }
+    &__col{
+        display: flex;
+        margin-right: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 15px;
+            color: black;
+        }
+
+        b{
+            color: $delete;
+            font-size: 18px;
+        }
+    }
+
+    &__edit{
+        color: $text;
+        border: 1px solid $text;
+        border-radius: 30px;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        margin-right: 40px;
+        justify-content: center;
+    }
+}
+
+.tweets{
+    &__info{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.usr-name{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.usr-usrname{
+    font-size: 14px;
+    color: $dark;
+    margin-bottom: 15px;
+}
+.usr-about{
+    color: $dark;
+    margin-bottom: 20px;
+}
+
+.prof__user, .tweet__usr, .follow-img{
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
